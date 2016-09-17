@@ -1,0 +1,22 @@
+{
+  "name": "ember-cli-dashboard",
+  "version": "0.0.0",
+  "description": "A CLI dashboard for ember-cli",
+  "bin": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ember",
+    "ember-cli",
+    "dashboard",
+    "cli",
+    "blessed"
+  ],
+  "author": "Dustin Specker <DustinSpecker@DustinSpecker.com> (http://dustinspecker.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "cross-spawn": "^4.0.0"
+  }
+}
