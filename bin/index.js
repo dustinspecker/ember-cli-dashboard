@@ -7,7 +7,8 @@ const dashboard = new Dashboard
 const {env} = process
 env.FORCE_COLOR = true
 
-const child = spawn('ember', ['serve'], {env, detached: true})
+const userArgs = process.argv.slice(2)
+const child = spawn('ember', ['serve', ...userArgs], {env, detached: true})
 
 child.on('error', err => {
   dashboard.styles.log.border.fg = 'red'
